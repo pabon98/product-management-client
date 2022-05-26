@@ -46,7 +46,6 @@ const UpdateProduct = () => {
     return (
         <div>
             <h1> Update {product.name}</h1>
-            <span><p>{id}</p></span>
             <form onSubmit={handleUpdateProduct}>
             <input type="text" onChange={handleNameChange} value={product.name || ''} placeholder='Product Name' />
             <input type="number" onChange={handleQuantityChange} value={product.quantity || ''}  placeholder='Product Quantity' />
